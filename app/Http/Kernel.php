@@ -4,6 +4,7 @@ namespace App\Http;
 
 use App\Http\Middleware\ContentSecurityPolicy;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use Spatie\Csp\AddCspHeaders;
 
 class Kernel extends HttpKernel
 {
@@ -20,7 +21,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
-        ContentSecurityPolicy::class,
+        AddCspHeaders::class,
     ];
 
     /**
