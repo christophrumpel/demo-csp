@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <style>
+        <style nonce="1234">
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -92,5 +92,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="http://tests.nomoreencore.com/bad-code.js"></script>
     </body>
 </html>
